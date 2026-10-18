@@ -22,9 +22,96 @@
   <main>
     <div class="eyebrow">Legal</div>
     <h1 class="page-title" id="legal-title">Privacy Policy</h1>
-    <div class="updated" id="legal-updated"></div>
-    <div class="intro" id="legal-intro"></div>
-    <div id="legal-sections"></div>
+    <div class="updated" id="legal-updated">Last updated: October 18, 2026</div>
+    <div class="intro" id="legal-intro">This Privacy Policy applies to the APEX mobile application, its public support and legal website at https://apexracetracker.com, and the services operated for them (the “Service”). “APEX”, “we”, “us” and “our” refer to the operator of the Service; “you” refers to the person using it. “Personal information” means information about an identifiable individual as defined by applicable law. The app currently operates without an APEX user account. This policy describes the current version and distinguishes planned features from current processing.</div>
+    <div id="legal-sections">
+      <section class="legal-section">
+        <h2>1. Information on your device</h2>
+        <p>Your followed series, races, drivers and teams, appearance and session-highlight colours, time-zone and time-format preferences, temperature and speed units, and setup progress are stored locally on your device. The app also caches racing information to make browsing faster. These preferences are not linked to an APEX account or synchronised to an APEX user profile. Notification settings have a separate server copy as explained below. The app does not require your name, email address, phone number, contacts or payment details to browse motorsport information. An email address is requested only if you choose to submit feedback through the optional feedback form.</p>
+      </section>
+      <section class="legal-section">
+        <h2>2. Optional racing notifications</h2>
+        <p>When you set up racing notifications, APEX creates a random installation identifier and an installation secret in your device’s protected storage. The secret authenticates changes to that installation; the backend stores a verification hash. The backend also stores your notification league/session/alert choices, device platform, registration timestamps and, when permission and registration succeed, a push notification token. These let us manage your choices and deliver requested alerts without an APEX account. Delivery records can include the alert content, installation identifier, token, delivery status, attempts and delivery ticket identifiers.
+
+The app asks for your device’s notification permission. Supabase stores the backend notification records. Expo and Apple or Google handle push registration and delivery, receiving the routing information and alert content needed for that purpose. Your notification choices are separate from locally stored favourites; initially suggested leagues can come from your local follows. Saving a choice does not guarantee that alerts for that league are available.
+
+You can turn notifications off in APEX Settings or in your device settings. APEX synchronises changes when it can reach the server; changes made offline may remain pending. Turning alerts off does not immediately erase existing registration or delivery records. Push registrations expire after 30 days without a refresh and are normally removed after a further 60 days. Notification event and delivery records are normally removed after seven days through scheduled cleanup. You can request deletion through the Privacy Contact below. Delivery may be delayed, and results-related alerts can contain spoilers.</p>
+      </section>
+      <section class="legal-section">
+        <h2>3. Time zone and local race times</h2>
+        <p>By default, APEX uses your device’s time-zone setting to convert session dates and times into local time, including daylight-saving adjustments supplied by your device. You can also choose a different display time zone in Settings. That preference is stored locally on your device and is used to format race and session times; the current app does not send the preference to our server. APEX does not request GPS or precise-location permission for this purpose.</p>
+      </section>
+      <section class="legal-section">
+        <h2>4. Technical information and support</h2>
+        <p>When your device requests content, the APEX backend and infrastructure providers may receive your IP address, request times, requested resources, network or device information supplied with the request, and error or security information. These records are used to deliver content, diagnose failures, manage capacity and prevent abuse. An IP address may indicate an approximate region. We do not claim that use of an account-free app is anonymous to the servers delivering it.
+
+The in-app feedback form sends your email address and message to the APEX backend, which uses Resend to forward them to the support mailbox when email delivery is configured. Resend and the receiving email provider process that correspondence to deliver and handle it. If you contact us through another route, we likewise receive the contact details, correspondence and attachments you choose to send. We use these to respond, investigate problems, handle rights requests and maintain an appropriate record of the matter. Send only information needed for your request; redact unrelated personal or sensitive information from screenshots.</p>
+      </section>
+      <section class="legal-section">
+        <h2>5. Purposes, necessity and consent</h2>
+        <p>We limit personal-information handling to purposes described in this policy or explained to you when information is requested, and to other purposes permitted or required by applicable law. We seek consent when the law requires it. Where the law permits a particular activity without consent, such as responding to a lawful demand, that exception is limited to its legal scope.
+
+Optional advertising personalisation or tracking is separate from the processing necessary to deliver requested content. You do not consent to optional tracking simply by opening the app, accepting the Terms of Use or reading this policy. Where optional processing is introduced, its notice will explain how to refuse or withdraw consent. Withdrawing consent can affect a feature that needs the information, but we will not make unrelated functionality conditional on unnecessary consent.</p>
+      </section>
+      <section class="legal-section">
+        <h2>6. Advertising</h2>
+        <p>APEX plans to support the service with advertising. Ads may appear in ad-enabled versions, but the current version does not include an advertising SDK or collect an advertising identifier for ad targeting. This policy does not authorise undisclosed tracking.
+
+Before third-party ads are enabled, we will identify the advertising partners, link to their privacy information, and explain the actual data they collect and the available choices. Depending on the implementation, this can include IP addresses, device information, advertising identifiers, and ad impressions or interactions, for delivery, measurement, fraud prevention and, where permitted and chosen, personalisation. We will request consent and operating-system tracking permission where required before the relevant processing begins. Accepting the Terms of Use is not consent to personalised advertising or cross-app tracking.</p>
+      </section>
+      <section class="legal-section">
+        <h2>7. Service providers, analytics and disclosures</h2>
+        <p>The current version does not integrate a third-party analytics SDK. The app does not upload your local favourites or appearance settings to an APEX account, or sell those local preferences.
+
+Our current integrations include Railway for hosting the APEX backend and handling its network requests; Supabase for notification registration and delivery records; Expo and Apple or Google for push registration and delivery; and Resend and the receiving email provider for feedback and support correspondence. The information involved and its purpose are described in the relevant sections above. Remotely hosted images and links to external services are explained below.
+
+The public support and legal website is hosted on GitHub Pages. GitHub logs and stores visitors’ IP addresses for security purposes and can receive the requested page and normal network-request information. We do not add advertising or analytics scripts to that website. GitHub’s privacy statement is available at https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement.
+
+Infrastructure and service providers may handle technical information to deliver, maintain and secure the Service. Outsourcing does not remove our responsibilities under applicable privacy law. Providers processing personal information on our behalf must be subject to appropriate safeguards and restrictions for that processing; this policy is not authority for unrelated advertising uses.
+
+We may disclose information in response to a legally valid requirement, or where otherwise lawfully necessary to investigate abuse or protect rights or safety. Such disclosures are limited to information reasonably needed for the purpose. Any proposed transfer of personal information in a sale or reorganisation of the Service must meet applicable notice, consent and protection requirements; this clause does not give unrestricted permission to sell user information.</p>
+      </section>
+      <section class="legal-section">
+        <h2>8. Processing locations and security</h2>
+        <p>Infrastructure and service providers may process personal information outside your province or country, including outside Canada. Foreign processing can subject it to different laws and lawful access by authorities. Contact the APEX Privacy Contact at apex.race.tracker@gmail.com to obtain our policies and practices for service providers outside Canada, including the relevant countries and authorised purposes, or to ask questions about those arrangements. Where additional cross-border notices or safeguards are required, they must be provided before the relevant processing.
+
+Requests from the app to the APEX backend use HTTPS. We are responsible for reasonable safeguards appropriate to the sensitivity and circumstances of information under our control. No system can guarantee complete security. That limitation does not waive our security duties or your rights. Protect your device and its backups. If a privacy incident occurs, we will assess it and provide notices and reports where required by applicable law.</p>
+      </section>
+      <section class="legal-section">
+        <h2>9. Retention and deletion</h2>
+        <p>Local preferences remain until you change or remove them or clear the app’s stored data. Uninstalling can remove local data, but device or cloud backups may retain or restore it. Protected installation credentials can persist across reinstalls on iOS. Manage device backups using your operating system’s controls; uninstalling does not itself submit a request to delete a backend notification registration. The notification retention periods are explained above.
+
+For technical logs and support correspondence under our control, retention is limited by the purpose for which the information is needed and applicable legal obligations. Relevant factors include unresolved support requests, security investigations, dispute preservation duties and provider backup cycles. We do not represent that every provider has the same retention period. Ask us for details relevant to your request.
+
+Once information is no longer reasonably needed and retention is not legally required, it should be securely deleted or rendered non-identifying. A deletion request can be subject to a lawful retention exception or a reasonable backup-expiry period; we will explain applicable limitations. Deleting app data does not by itself delete server logs, correspondence or independent operating-system backups.</p>
+      </section>
+      <section class="legal-section">
+        <h2>10. Your choices and rights</h2>
+        <p>You can unfollow items in APEX, change appearance in Settings, and choose Automatic or a manual display time zone in Settings. Your operating system’s app-data controls, deletion controls and backup settings govern removal of local preferences. There is no APEX account to delete.
+
+Depending on the law that applies, you may have rights to information about processing, access, correction, deletion, withdrawal of consent, restriction, objection or portability. These rights are subject to their statutory conditions and exceptions; listing them does not imply that every right exists in every jurisdiction. Withdrawal does not invalidate earlier lawful processing.
+
+Send requests through the contact route below. We may ask for proportionate information to verify your authority and locate relevant records, but will not ask for unnecessary identification. We will respond within applicable legal time limits and explain a refusal or limitation where required. Local-only information may not be accessible to us. You may complain to the appropriate privacy regulator, including the Office of the Information and Privacy Commissioner of Alberta or the Office of the Privacy Commissioner of Canada where their jurisdiction applies. You do not have to waive a complaint or legal remedy to make a request.</p>
+      </section>
+      <section class="legal-section">
+        <h2>11. Remote images, external destinations and device services</h2>
+        <p>Some images load directly from an external host. For example, when an available race-recap thumbnail is displayed, APEX requests it from Google’s YouTube image host. The host can receive your IP address, the requested image and normal network-request information even if you do not open the video. This is separate from any further information processed when you choose to open YouTube.
+
+Opening a highlights, official-results or other external link takes you to a service with its own privacy practices. For Google and YouTube, see https://policies.google.com/privacy. Device backups, app-store services and any development or beta-testing host may also process information under their own notices. Review those notices before providing information. Their independent processing is distinct from processing performed on APEX’s behalf; this distinction does not excuse APEX from responsibility for its own integrations or disclosures.</p>
+      </section>
+      <section class="legal-section">
+        <h2>12. Children</h2>
+        <p>The Service is intended for a general motorsport audience and is not directed at young children. We do not knowingly solicit personal information from a child who cannot validly consent under applicable law without the legally required involvement of a parent or guardian. If you believe a child has supplied information improperly, contact us so we can investigate and take appropriate action, including deletion where required. Describing the app as general-audience does not override children’s privacy protections.</p>
+      </section>
+      <section class="legal-section">
+        <h2>13. Policy updates</h2>
+        <p>The date above identifies this policy version. Material changes will be communicated through an appropriate notice, and additional consent will be requested where required before new uses begin. Simply publishing a revised policy does not replace a consent requirement.</p>
+      </section>
+      <section class="legal-section">
+        <h2>14. Contact</h2>
+        <p>For privacy questions, access or deletion requests, or information about service providers outside Canada, contact the APEX Privacy Contact at apex.race.tracker@gmail.com and include “Privacy” in the subject line. Include enough detail to explain your question or request without sending unnecessary sensitive data. Do not email passwords, an installation secret or a full push token. If locating notification records requires further verification, we will explain a proportionate verification process.</p>
+      </section>
+    </div>
   </main>
   <footer class="footer">
     <div class="footer-inner">
@@ -36,7 +123,5 @@
       </div>
     </div>
   </footer>
-  <script src="../legal.js"></script>
-  <script>renderApexLegal("privacy");</script>
 </body>
 </html>

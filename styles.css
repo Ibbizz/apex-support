@@ -68,12 +68,13 @@ h1{
 .page-title{font-size:clamp(38px,7vw,60px);margin-bottom:8px}
 .updated{color:var(--muted);font-size:14px;margin-bottom:38px}
 .intro{
+  overflow-wrap:anywhere;
   color:#d5dbd8;font-size:17px;padding:22px;background:var(--panel);
   border:1px solid var(--line);border-radius:16px;margin-bottom:30px
 }
 .legal-section{padding:26px 0;border-top:1px solid var(--line)}
 .legal-section h2{font-size:20px;line-height:1.35;margin:0 0 12px}
-.legal-section p{margin:0;color:#c3ccc7;white-space:pre-line}
+.legal-section p{margin:0;color:#c3ccc7;white-space:pre-line;overflow-wrap:anywhere}
 .support-box{
   padding:28px;background:var(--panel);border:1px solid var(--line);
   border-radius:18px;margin-top:28px
